@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <gradient
+        android:startColor="@color/shadowBoutonStart"
+        android:endColor="@color/shadowBoutonEnd"
+        android:centerColor="@color/shadowBoutonMid"
+        android:gradientRadius="50%p"
+        android:type="radial"/>
+
+    <corners android:radius="300dp" />
+</shape>

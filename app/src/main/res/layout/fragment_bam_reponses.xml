@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:visibility="invisible"
+    android:id="@+id/fragRep"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_bar_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/ripple"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/ripple_bam_rep">
+
+            <LinearLayout style="@style/blank_box"
+                android:padding="16dp"
+                android:layout_height="100dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/desc"
+                    android:textColor="#000000"
+                    android:textSize="10sp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/prixRep"
+                        style="@style/prix" />
+
+                    <LinearLayout
+                        android:gravity="right|center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/timeRep"
+                            style="@style/temps"/>
+
+                        <ImageView style="@style/temps_image"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swRLRep"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewR"
+                android:paddingTop="9dp"
+                android:paddingBottom="16dp"
+                android:clipToPadding="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+
+    <!-- Ombre dessous le blank-->
+    <View
+        android:layout_marginTop="@dimen/margin_tabs_blank_bis"
+        style="@style/blank_shadow" />
+
+</RelativeLayout>

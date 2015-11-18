@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabsLayout"
+    android:visibility="visible"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        ></android.support.v4.view.ViewPager>
+
+    <bam.bam.globalDisplay.views.tabs.SlidingTabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/primaryDark"/>
+
+    <!-- Ombre pour les tabs -->
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_marginTop="@dimen/margin_bar_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/dropshadow" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/boutonCrayonL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Ombre du bouton en bas à droite pour éditer -->
+        <LinearLayout style="@style/shadow_bouton"/>
+
+        <!-- Bouton en bas à droite pour éditer (avec ripple) -->
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/sendBam"
+            style="@style/ripple_bouton">
+
+            <ImageView style="@style/crayon_bouton"/>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </RelativeLayout>
+</RelativeLayout>

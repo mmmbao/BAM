@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:isScrollContainer="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Récupère le focus-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+
+        <LinearLayout
+            android:background="@drawable/frame_border"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:text="@string/send_bam_besoin"
+                style="@style/profil_send_textView"/>
+
+            <EditText
+                android:id="@+id/titre"
+                style="@style/edittext_titre"/>
+
+            <TextView
+                android:text="@string/send_bam_description"
+                style="@style/profil_send_textView"/>
+
+            <EditText
+                android:id="@+id/desc"
+                style="@style/edittext_desc"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="@string/send_bam_prix"
+                    style="@style/profil_send_textView"/>
+
+                <TextView
+                    android:textColor="@color/grayText"
+                    android:text="@string/warnGratuit"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/prix"
+                    style="@style/edittext_prix"/>
+
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="€"/>
+            </LinearLayout>
+
+            <Button
+                style="@style/bouton"
+                android:id="@+id/envoyerBam"
+                android:text="@string/send_bam_bouton"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+

@@ -1,0 +1,311 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- APPLICATION THEME -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar" >
+        <item name="android:textViewStyle">@style/textStyleApp</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/appBackground</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorControlActivated">@color/primary</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="drawerArrowStyle">@style/MyDrawerArrowToggle</item>
+    </style>
+
+    <style name="MyDrawerArrowToggle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">#FFFFFF</item>
+    </style>
+
+    <!-- NAVIGATION DRAWER-->
+    <style name="ripple_drawer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="mrl_rippleDuration">350</item>
+        <item name="mrl_rippleFadeDuration">75</item>
+        <item name="mrl_rippleOverlay">true</item>
+        <item name="mrl_rippleHover">true</item>
+        <item name="mrl_rippleDelayClick">true</item>
+        <item name="mrl_rippleColor">#000000</item>
+        <item name="mrl_rippleAlpha">0.1</item>
+        <item name="mrl_rippleDimension">10dp</item>
+    </style>
+
+    <!-- FRAME SEND BAM & PROFIL -->
+    <style name="profil_send_edittext">
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingRight">3dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/frame_border</item>
+        <item name="android:layout_marginBottom">30dp</item>
+    </style>
+
+    <style name="edittext_prix" parent="profil_send_edittext">
+        <item name="android:text">0</item>
+        <item name="android:maxLength">7</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:inputType">numberDecimal</item>
+    </style>
+
+    <style name="edittext_titre" parent="profil_send_edittext">
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">30</item>
+    </style>
+
+    <style name="edittext_desc" parent="profil_send_edittext">
+        <item name="android:layout_height">100dp</item>
+        <item name="android:gravity">left|top</item>
+        <item name="android:maxLength">160</item>
+    </style>
+
+    <style name="edittext_tel" parent="profil_send_edittext">
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">10</item>
+    </style>
+
+    <style name="profil_send_textView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="bouton">
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/primary</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="image_profil">
+        <item name="android:background">@drawable/frame_border</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@mipmap/profil</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+
+    <style name="ripple_photo">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="mrl_rippleDuration">350</item>
+        <item name="mrl_rippleFadeDuration">75</item>
+        <item name="mrl_rippleOverlay">true</item>
+        <item name="mrl_rippleHover">true</item>
+        <item name="mrl_rippleDelayClick">true</item>
+        <item name="mrl_rippleColor">#000000</item>
+        <item name="mrl_rippleAlpha">0.1</item>
+        <item name="mrl_rippleDimension">10dp</item>
+    </style>
+
+    <!-- TABS RECUS ENVOYES REPONSES -->
+
+    <style name="blank_box">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/blank</item>
+        <item name="android:background">@color/second</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="blank_shadow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@drawable/dropshadow</item>
+        <item name="android:layout_marginTop">@dimen/margin_tabs_blank</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <style name="ripple_bouton">
+        <item name="android:background">@drawable/rounded_bouton</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="mrl_rippleDuration">350</item>
+        <item name="mrl_rippleFadeDuration">75</item>
+        <item name="mrl_rippleRoundedCorners">300dp</item>
+        <item name="mrl_rippleOverlay">true</item>
+        <item name="mrl_rippleHover">true</item>
+        <item name="mrl_rippleDelayClick">true</item>
+        <item name="mrl_rippleColor">#000000</item>
+        <item name="mrl_rippleAlpha">0.1</item>
+        <item name="mrl_rippleDimension">10dp</item>
+    </style>
+
+    <style name="shadow_bouton">
+        <item name="android:background">@drawable/shadow_bouton</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="crayon_bouton">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:src">@mipmap/crayon</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+    </style>
+
+    <style name="photo_tel_list">
+        <item name="android:src">@mipmap/phone</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="photo_pseudo_list">
+        <item name="android:background">@drawable/frame_border</item>
+        <item name="android:src">@mipmap/profil</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+    </style>
+
+    <style name="linear_list_recu_rep">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/frame_border</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="linear_list_env">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/frame_border</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="linear_list_grise">
+        <item name="android:clickable">true</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:background">@color/itemGrise</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="pseudo_recu_env">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/grayText</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="pseudo_rep">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+    <style name="temps_image">
+        <item name="android:src">@mipmap/time</item>
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+    </style>
+
+    <style name="temps">
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/primaryDark</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="prix">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="titre">
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="nbRep">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/primaryDark</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="description">
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textColor">@color/grayText</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ripple_bam_env">
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="mrl_rippleDuration">350</item>
+        <item name="mrl_rippleFadeDuration">75</item>
+        <item name="mrl_rippleOverlay">true</item>
+        <item name="mrl_rippleHover">true</item>
+        <item name="mrl_rippleDelayClick">true</item>
+        <item name="mrl_rippleColor">#000000</item>
+        <item name="mrl_rippleAlpha">0.1</item>
+        <item name="mrl_rippleDimension">10dp</item>
+    </style>
+
+    <style name="ripple_bam_rep">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="mrl_rippleDuration">350</item>
+        <item name="mrl_rippleFadeDuration">75</item>
+        <item name="mrl_rippleOverlay">true</item>
+        <item name="mrl_rippleHover">true</item>
+        <item name="mrl_rippleDelayClick">true</item>
+        <item name="mrl_rippleColor">#000000</item>
+        <item name="mrl_rippleAlpha">0.1</item>
+        <item name="mrl_rippleDimension">10dp</item>
+    </style>
+
+</resources>

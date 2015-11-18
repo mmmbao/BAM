@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_bar_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout style="@style/blank_box">
+
+            <TextView
+                android:id="@+id/nbBAM"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swRL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:paddingTop="9dp"
+                android:paddingBottom="16dp"
+                android:clipToPadding="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <!-- Ombre dessous le blank-->
+    <View style="@style/blank_shadow" />
+
+</RelativeLayout>

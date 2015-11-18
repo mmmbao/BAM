@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- BAM RECUS / ENVOYES / REPONSES -->
+    <color name="shadowBoutonStart">@color/transparent</color>
+    <color name="shadowBoutonMid">#44000000</color>
+    <color name="shadowBoutonEnd">#00000000</color>
+    <color name="grayText">#ffa1a1a1</color>
+    <color name="bamPayant">#000000</color>
+    <color name="bamGratuit">#ff4cdd66</color>
+    <color name="itemGrise">#77000000</color>
+
+
+    <!-- GENERAL -->
+    <color name="primary">#2574A9</color>
+    <color name="primaryDark">#ff26548b</color>
+    <color name="frameBack">#ecf0f1</color>
+    <color name="second">#FFFFFF</color>
+    <color name="shadowToolBar">#44000000</color>
+    <color name="statusBarShadow">#33000000</color>
+    <color name="frameBorder">#65acacac</color>
+    <color name="appBackground">#000000</color>
+
+    <!-- DRAWER -->
+    <color name="dividerNav">#ffe8e8e8</color>
+    <color name="navColor">#87000000</color>
+    <color name="itemSelect">#E3E3E3</color>
+    <color name="shadowNav">#3a000000</color>
+    <color name="tabsScrollColor">#FFFFFF</color>
+
+</resources>

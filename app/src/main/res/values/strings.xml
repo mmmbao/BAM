@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- OTHER -->
+    <string name="app_name">BAM</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="waitGPS">Connexion au GPS en cours...</string>
+    <string name="warnGPS">Le GPS n\'est pas activé pour l\'application</string>
+    <string name="warnInet">Internet n\'est pas activé</string>
+    <string name="pb_serveur">problème de connexion avec le serveur</string>
+    <string name="enregistrement">Enregistrement...</string>
+    <string name="URL">https://bam-serverws.rhcloud.com/ws/api/v1/</string>
+
+    <!-- FRAME TABS -->
+    <string name="bam_recus_envoyes_titre">BAM reçus / envoyés</string>
+    <string name="tab_recus">BAM reçus</string>
+    <string name="tab_envoyes">BAM envoyés</string>
+    <string name="textEnvoyes">BAM actifs envoyés</string>
+    <string name="textRecus">BAM recus</string>
+    <string name="tabs_titre">BAM</string>
+    <string name="accepter_bam">Voulez-vous accepter le BAM ?</string>
+    <string name="refuser_bam">"Voulez-vous refuser le BAM ?"</string>
+    <string name="confirmation">"Confirmation"</string>
+    <string name="bamExpire">Le BAM a expiré</string>
+    <string name="gratuit">Gratuit</string>
+    <string name="annuler">Annuler</string>
+    <string name="annulerBam">Voulez-vous annuler le bam ?</string>
+
+    <!-- FRAME SEND BAM -->
+    <string name="send_bam_titre">Poster un BAM</string>
+    <string name="send_bam_besoin">Mon besoin</string>
+    <string name="send_bam_description">Ma description</string>
+    <string name="send_bam_prix">Mon prix</string>
+    <string name="warnGratuit">(mettre 0 pour gratuit)</string>
+    <string name="send_bam_bouton">Envoyer</string>
+    <string name="messBamEnv">BAM envoyé !</string>
+    <string name="prix_empty">Prix non renseigné</string>
+    <string name="titre_empty">Titre non renseigné</string>
+    <string name="limiteBams">Vous avez dépassé la limite de BAM</string>
+    <string name="bamAnnul">Le BAM a été annulé</string>
+
+    <!-- FRAME PROFIL -->
+    <string name="profil_titre">Mon profil</string>
+    <string name="profil_pseudo">Mon pseudo</string>
+    <string name="profil_tel">Mon téléphone</string>
+    <string name="profil_bouton">Enregistrer</string>
+    <string name="resizeMessage">"Whoops - your device doesn't support the crop action!"</string>
+    <string name="messSaveProfil">Profil sauvegardé</string>
+    <string name="pseudo_invalide">Pseudo déjà utilisé</string>
+    <string name="peudo_empty">Pseudo non renseigné</string>
+    <string name="tel_invalide">Téléphone incomplet</string>
+    <string name="photo">Photo de profil</string>
+    <string name="supprPhoto">Voulez-vous supprimer votre photo ?</string>
+
+    <!-- NOTIFICATIONS -->
+    <string name="notification">Nouveau BAM !</string>
+
+</resources>

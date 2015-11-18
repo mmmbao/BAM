@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- PlaceHolder pour le fragment -->
+    <FrameLayout
+        android:paddingTop="@dimen/padding_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:background="@color/frameBack"
+                android:id="@+id/main_fragment"
+                android:orientation="vertical"/>
+
+            <!-- Ombre de la barre -->
+            <View xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_marginTop="@dimen/padding_status"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/dropshadow" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- la bar -->
+        <include layout="@layout/tool_bar"/>
+
+        <!-- Layout pour les tabs -->
+        <include layout="@layout/tabs"/>
+    </LinearLayout>
+</RelativeLayout>

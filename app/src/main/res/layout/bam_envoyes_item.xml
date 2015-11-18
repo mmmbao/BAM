@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.balysv.materialripple.MaterialRippleLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ripple_bam_env">
+    <LinearLayout
+        android:id="@+id/item"
+        style="@style/linear_list_env"
+        android:padding="0dp">
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:padding="16dp">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/photo"
+                        android:layout_marginBottom="5dp"
+                        style="@style/photo_pseudo_list"/>
+
+                    <TextView
+                        android:id="@+id/pseudo"
+                        style="@style/pseudo_recu_env" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:paddingLeft="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/titre"
+                            style="@style/titre"/>
+
+                        <LinearLayout
+                            android:gravity="right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:id="@+id/nbRep"
+                                style="@style/nbRep"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/prix"
+                            style="@style/prix"/>
+
+                        <LinearLayout
+                            android:gravity="right|center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                style="@style/temps"
+                                android:id="@+id/time"/>
+
+                            <ImageView
+                                style="@style/temps_image"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llgrise"
+                style="@style/linear_list_grise"
+                android:orientation="vertical" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</com.balysv.materialripple.MaterialRippleLayout>
